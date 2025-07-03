@@ -42,7 +42,7 @@ public class Lista_Equipo implements Lista<Equipo>{
         String estadot = String.valueOf(estado);
         for (int i = 0; i < max; i++) {
             if(equipo[i]!=null){
-                if(equipo[i].getEstado()==estadot){
+                if(equipo[i].getEstado()==estado){
                     contador++;
                 }
             }
