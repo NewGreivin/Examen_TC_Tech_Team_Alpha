@@ -15,7 +15,7 @@ public class Equipo {
     
     private String ubicacion;
     
-    private EnumEstado estado;
+    private EstadoEnum estado;
 
     public String getCodigo() {
         return codigo;
@@ -29,15 +29,15 @@ public class Equipo {
         return ubicacion;
     }
 
-    public EnumEstado getEstado() {
+    public EstadoEnum getEstado() {
         return estado;
     }
 
-    public Equipo(String codigo, String descripcion, String ubicacion, EnumEstado estado) {
+    public Equipo(String codigo, String descripcion, String ubicacion, EstadoEnum estado) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.ubicacion = ubicacion;
-        this.estado = estado;
+        this.estado = EstadoEnum.EN_REVISION;
     }
 
     @Override
