@@ -14,7 +14,7 @@ public enum EstadoEnum {
     EN_REVISION("En Revision"),
     FUERA_DE_SERVICIO("Fuera de Servicio");
    
-    private String descripcion;
+    private final String descripcion;
     
     EstadoEnum(String descripcion) {
         this.descripcion = descripcion;
