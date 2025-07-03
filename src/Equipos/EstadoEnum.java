@@ -13,19 +13,18 @@ public enum EstadoEnum {
     OPERATIVO("Operativo"),
     EN_REVISION("En Revision"),
     FUERA_DE_SERVICIO("Fuera de Servicio");
-
-    public static EstadoEnum getOPERATIVO() {
-        return OPERATIVO;
+   
+    private String descripcion;
+    
+    EstadoEnum(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public static EstadoEnum getEN_REVISION() {
-        return EN_REVISION;
+    public String getDescripcion() {
+        return descripcion;
     }
-
-    public static EstadoEnum getFUERA_DE_SERVICIO() {
-        return FUERA_DE_SERVICIO;
-    }
-
+    
+   
     @Override
     public String toString() {
         return "EstadoEnum{" + "ordinal=" + ordinal() + ", name=" + name() + '}';
